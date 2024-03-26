@@ -55,11 +55,11 @@ if __name__ == '__main__':
     score_best_avg = 0  # for saving check points
 
     path_global = []
-    result_dir = os.path.dirname(os.path.realpath(__file__)) + '\SavedResult'
+    result_dir = os.path.dirname(os.path.realpath(__file__)) + '/SavedResult'
     rewards_global = []
 
     writer = SummaryWriter("SavedLosses")
-    writer_dir = os.path.dirname(os.path.realpath(__file__)) + '\SavedLosses'
+    writer_dir = os.path.dirname(os.path.realpath(__file__)) + '/SavedLosses'
     delete_files(writer_dir)
     if train_model:
         for i in range(steps_games + 1):
